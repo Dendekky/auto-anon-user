@@ -5,7 +5,7 @@ const AnonUser = (req, res) => {
        res.send("You visited this page " + req.session.page_views + " times." + "Your session ID is " + req.sessionID);
     } else {
        req.session.page_views = 1;
-       res.send("Welcome to this page for the first time!");
+       res.send("Welcome to this page for the first time! An ID has been created for you.");
     }
 }
 
